@@ -43,7 +43,7 @@ const Form = ({ users, setusers }) => {
             value={formData.name}
             placeholder='Full Name'
             onChange={handleChange}
-            className="border bg-[transparent] border-zinc-700 rounded-md w-full px-3 py-2 focus:outline-none focus:border-zinc-100"
+            className="border bg-[transparent] text-zinc-200 border-zinc-700 rounded-md w-full px-3 py-2 focus:outline-none focus:border-zinc-100"
             required
           />
         </div>
@@ -58,7 +58,7 @@ const Form = ({ users, setusers }) => {
             value={formData.email}
             placeholder='Email'
             onChange={handleChange}
-            className="border bg-[transparent] border-zinc-700 rounded-md w-full px-3 py-2 focus:outline-none focus:border-zinc-100"
+            className="border text-zinc-200 bg-[transparent] border-zinc-700 rounded-md w-full px-3 py-2 focus:outline-none focus:border-zinc-100"
             required
           />
         </div>
@@ -73,7 +73,7 @@ const Form = ({ users, setusers }) => {
             value={formData.mobile}
             placeholder='Mobile Number'
             onChange={handleChange}
-            className="border bg-[transparent] border-zinc-700 rounded-md w-full px-3 py-2 focus:outline-none focus:border-zinc-100"
+            className="border text-zinc-200 bg-[transparent] border-zinc-700 rounded-md w-full px-3 py-2 focus:outline-none focus:border-zinc-100"
             required
           />
         </div>

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from "framer-motion"
+import { usercontext } from '../context/UserContext'
 
-const Show = ({ users, setusers,main }) => {
-
+const Show = ({ main }) => {
+    const [users, setusers] = useContext(usercontext)
     const deleteHandler = (index) => {
         const userCopy = [...users]
         userCopy.splice(index, 1)

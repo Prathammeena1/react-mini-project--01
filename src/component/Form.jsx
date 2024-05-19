@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { nanoid } from 'nanoid';
+import { usercontext } from '../context/UserContext';
 
-const Form = ({ users, setusers }) => {
-
+const Form = () => {
+  const [users,setusers] = useContext(usercontext)
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     setusers([...users, formData])
